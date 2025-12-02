@@ -1,0 +1,122 @@
+@use '/src/host/styles/theme';
+
+// Cyber Theme Colors
+$neon-cyan: #00f2ff;
+$neon-purple: #7000ff;
+$glass-bg: rgba(24, 34, 49, 0.7); 
+$glass-border: rgba(255, 255, 255, 0.1);
+
+.challenges {
+  display: grid;
+  // Auto-responsive: Fits as many columns as possible (min 300px wide)
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: $glass-bg;
+  border: 1px solid $glass-border;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); // Bouncy effect
+  backdrop-filter: blur(12px); // The "Glass" blur effect
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+  // --- HOVER EFFECTS ---
+  &:hover {
+    transform: translateY(-8px) scale(1.02); // Lift up
+    border-color: rgba($neon-cyan, 0.5); // Neon Border
+    box-shadow: 0 15px 30px -5px rgba($neon-cyan, 0.2); // Neon Glow
+
+    // Zoom the image inside
+    .imageWrapper img {
+      transform: scale(1.1);
+    }
+
+    // Show the "Scan Line" overlay
+    .glowOverlay {
+      opacity: 1;
+    }
+
+    // Light up the text
+    h1 {
+      color: $neon-cyan;
+      text-shadow: 0 0 10px rgba($neon-cyan, 0.5);
+    }
+  }
+
+  // Mobile layout adjustment
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.2);
+  border-bottom: 1px solid $glass-border;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; // Keep image proportions
+    padding: 20px;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(0 0 8px rgba(0,0,0,0.5));
+  }
+}
+
+// The "Scan Line" effect that appears on hover
+.glowOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba($neon-cyan, 0.1) 50%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 10px 0;
+    transition: all 0.3s ease;
+  }
+
+  // "Explore" text at the bottom
+  span {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 600;
+  }
+}

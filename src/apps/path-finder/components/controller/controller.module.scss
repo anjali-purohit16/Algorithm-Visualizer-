@@ -1,0 +1,82 @@
+@use '/src/host/styles/theme';
+
+.controller {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .operation {
+    display: flex;
+    gap: 10px;
+  }
+
+  .execution {
+    display: flex;
+    gap: 10px;
+  }
+
+  .mazeSelector,
+  .pathFinder {
+    width: 125px;
+    border: 1px solid theme.$base;
+    padding: 0 5px;
+  }
+
+  button:disabled {
+    opacity: 0.5;
+  }
+
+  .speed,
+  .play {
+    display: none;
+  }
+
+  .pathInfo {
+    display: none;
+    gap: 10px;
+
+    .highlight {
+      font-weight: 600;
+      min-width: 3ch;
+      display: inline-block;
+    }
+  }
+}
+
+@media (width >= 640px) {
+  .controller {
+    .pathInfo {
+      display: flex;
+    }
+  }
+}
+
+@media (width >= 1024px) {
+  .controller {
+    .speed,
+    .play {
+      display: block;
+    }
+
+    .mazeSelector,
+    .pathFinder {
+      width: auto;
+    }
+  }
+}
+
+[data-theme='dark'] {
+  .execution {
+    img {
+      filter: invert(1);
+    }
+  }
+
+  select {
+    background-color: theme.$dark;
+    color: theme.$light;
+  }
+}
