@@ -1,0 +1,23 @@
+@use '/src/host/styles/theme';
+
+.tourWrapper {
+  display: none;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 0;
+
+  .tour {
+    border: 1px solid theme.$base;
+    padding: 2px 4px;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (width >= 1024px) {
+  .tourWrapper {
+    display: flex;
+  }
+}
