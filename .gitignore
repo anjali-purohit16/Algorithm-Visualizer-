@@ -23,3 +23,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# key
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH4n8xvGhh5j9KZN5mUD58q28cgz1Ee/Jv8851NNzMwF shivrajkaushik248@gmail.com
