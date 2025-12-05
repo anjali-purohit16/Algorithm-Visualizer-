@@ -104,20 +104,5 @@ Build libraries
 
 ### Run in your local
 
-- `git clone https://github.com/sadanandpai/algo-visualizers.git`
-- `cd algo-visualizers`
 - `npm install`
 - `npm run dev`
-
----
-
-### Contributing Guide
-
-If you want to contribute, improve or fix bugs in this repo, then check out the
-[Contributing Guide](./CONTRIBUTING.md) <br/>
-
-<br>
-
-### License
-
-This repository is MIT licensed. [Read more](./LICENSE)
