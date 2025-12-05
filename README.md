@@ -1,20 +1,15 @@
 <div align="center">
   <h1>Algorithms Visualizers</h1>
   <h2>Responsive visualizers built using React for popular algorithms</h2>
-  <div>
-    <a name="stars"><img src="https://img.shields.io/github/stars/sadanandpai/algo-visualizers?style=for-the-badge"></a>
-    <a name="forks"><img src="https://img.shields.io/github/forks/sadanandpai/algo-visualizers?logoColor=green&style=for-the-badge"></a>
-    <a name="license"><img src="https://img.shields.io/github/license/sadanandpai/algo-visualizers?style=for-the-badge"></a>
-  </div>
 
 [![built with Codeium](https://codeium.com/badges/main)](https://codeium.com)
 
-<a href="https://sadanandpai.github.io/algo-visualizers/"><img src="./public/images/cell.png" alt="cover" /></a>
+<a href="https://github.com/anjali-purohit16/Algorithm-Visualizer/"><img src="./public/images/cell.png" alt="cover" /></a>
 <br/>
-<a href="https://sadanandpai.github.io/algo-visualizers/"><img src="./public/images/bar.png" alt="cover" /></a>
+<a href="https://github.com/anjali-purohit16/Algorithm-Visualizer/"><img src="./public/images/bar.png" alt="cover" /></a>
 <br/>
-<a href="https://sadanandpai.github.io/algo-visualizers/"><img src="./public/images/path.png" alt="cover" /></a>
-<a href="https://sadanandpai.github.io/algo-visualizers/">Visualize the
+<a href="https://github.com/anjali-purohit16/Algorithm-Visualizer/"><img src="./public/images/path.png" alt="cover" /></a>
+<a href="https://github.com/anjali-purohit16/Algorithm-Visualizer/">Visualize the
 algorithms</a>
 
 </div>
@@ -102,7 +97,3 @@ Build libraries
 
 <br>
 
-### Run in your local
-
-- `npm install`
-- `npm run dev`

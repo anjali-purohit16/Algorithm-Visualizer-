@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import react from '@vitejs/plugin-react-swc';
 
 export default defineConfig({
+  base: '/Algorithm-Visualizer-./',
   plugins: [react()],
   resolve: {
     alias: {
