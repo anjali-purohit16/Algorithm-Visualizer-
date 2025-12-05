@@ -5,8 +5,8 @@
   "type": "module",
   "license": "MIT",
   "author": {
-    "name": "Sadanand pai",
-    "email": "sadypai@gmail.com"
+    "name": "Anjali Purohit",
+    "email": "purohitanjali098@gmail.com"
   },
   "scripts": {
     "dev": "vite",
